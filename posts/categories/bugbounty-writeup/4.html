@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the First Bug that i  found in Facebook.">
-    <title>Replying Comments On Someone’s LiveStream From Page is Posted as Personal Identity - Prakash</title>
+    <meta name="description" content="This is a 3rd Valid bug that i found in Facebook.">
+    <title>Page Admin Disclosure When Replying Comments - Prakash</title>
 
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
 </head>
 
 <body>
-    <div class="d-none" id="post-id" post-id="1"></div>
+    <div class="d-none" id="post-id" post-id="4"></div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md fixed-top not-shrink animated slideInDown">
         <div class="container">
@@ -101,7 +101,7 @@
     <section class="banner mb-5" id="home">
         <div class="text container">
             <div class="d-flex flex-column justify-content-end h-100">
-                <h1 class="animated fadeInDownBig mb-4">Replying Comments On Someone’s LiveStream From Page is Posted as Personal Identity</h1>
+                <h1 class="animated fadeInDownBig mb-4">Page Admin Disclosure When Replying Comments</h1>
             </div>
         </div>
     </section>
@@ -110,37 +110,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 wow fadeInUp" id="md-html">
-                    <p id="post-date"><i class="far fa-clock"></i>&nbsp;Dec 30, 2020</p>
-                    <h2 class="mb-3 mt-5 toc-h2">Introduction</h2>
-<p>Hello Everyone, This is my first ever bug that i have found on Facebook. Initially i don’t know anything about bug bounty and cybersecurity. One day i just scrolled the Facebook news feed and I saw the post of <a href="https://www.twitter.com/saugatpk5">Saugat Pokharel</a> brother about the Acknowledged By Facebook Security Team and I quickly text him. He shares something useful tips to me due to which i got my first ever Bounty from Facebook.</p>
-<h2 class="mb-3 mt-5 toc-h2">Explanation of issue</h2>
-<p>Now, Let me explain the issue.
-Once i was testing some LiveStream Feature in Facebook for iOS.
-In iOS there is option to switch voice as a Page in other Posts and I quickly go to other Page LiveStream and Switch voice as a Page and Comment there then it is posted as a Page Name it works fine till that time. When i try to reply Someone’s Comments it is attributed as Admin’s Personal Identity which is unlikely to happen. I quickly reported this issue to Facebook Security Team.</p>
+                    <p id="post-date"><i class="far fa-clock"></i>&nbsp;Jan 22, 2021</p>
+                    <h1>Introduction</h1>
+<p>Hello Everyone, I am Prakash Panta From Bharatpur Nepal. Today i will tell you about my 3rd valid bug on Facebook. Let’s get started.</p>
+<h2 class="mb-3 mt-5 toc-h2">Explanation of Issue</h2>
+<p>I noticed that when someone’s comments in the Page post admin gets notification. Once i click that notification it will redirected to the Page Post where the comments was made. I tried to reply that comment, Sadly comment was attributed as Page.</p>
+<p>Again i logged in my another account and comment in that post and reply my own comment from another account. I quickly logged in Page Admin Account, it shows someone is replied to this comments. So i quickly tap that notification and it redirected to that comment, I replied there. Surprisingly Comment was attributed as Page Admin Personal Profile.</p>
+<p>Once reported, they acknowledged my report,they rewarded me with bounty and finally they fix the issue.</p>
+<p><p class="hover-img"><img src="/posts/images/4/4-1.jpg" alt="Message From Facebook Security Team" title="Rewarded" class="img-fluid"></p></p>
 <h2 class="mb-3 mt-5 toc-h2">Proof of Concept</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1VoCORfa924" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<p>Once reported, they acknowledged my report,they fixed the issue, I found fix bypass of the issue and finally rewarded me with bounty.</p>
-<p><p class="hover-img"><img src="/posts/images/1/1-2.jpg" alt="Message From Facebook Security Team" title="Rewarded" class="img-fluid"></p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c7qstUSTf1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <h2 class="mb-3 mt-5 toc-h2">Timeline of Report</h2>
-<p>June 7, 2020: Initial Report Sent</p>
-<p>June 19, 2020: Pre-Triaged (After Several Discussion)</p>
-<p>June 23, 2020: Triaged</p>
-<p>July 2, 2020: Confirmation of Fix and Bounty Awarded ($500)</p>
-<p>July 16, 2020: Bypass Sent</p>
-<p>July 23, 2020: Pre-Triaged</p>
-<p>September 8, 2020: Triaged</p>
-<p>September 24, 2020: Confirmation of Fix and Fix Confirm from My Side</p>
-<p>October 1, 2020: Bounty Awarded ($500)</p>
-<p>Thank you for taking the time to read my article. Have a great day!
+<p>June 17, 2020: Report Sent</p>
+<p>June 23, 2020: Not Reproduced and more info sent</p>
+<p>June 26, 2020: Pre-Triaged</p>
+<p>June 27, 2020: Triaged</p>
+<p>August 28, 2020: Bounty Awarded</p>
+<p>January 22, 2021: Confirmation of Fix and Fix Confirm from my side</p>
+<p>Thank you for taking the time to read my article. Have a great day!<br>
 You can follow me on <a href="https://www.facebook.com/prakash.panta.142">Facebook</a> or <a href="https://www.twitter.com/prakashpanta268">Twitter</a> if you would like to stay connected with me.</p>
 
                     <hr class="mt-5">
                     <div class="tag-list my-5">
                         <span>Tags: </span>
-                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Bugbounty</span>
-                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;"> Facebook</span>
-                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;"> FacebookBugBounty</span>
-                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;"> Writeup</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">bugbounty</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">bugbountywriteup</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">writeup</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Facebookbugbounty</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Facebook</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Infosec</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Facebookbug</span>
                     </div>
                 </div>
                 <div class="col-lg-4 sidebar wow fadeInUp">
